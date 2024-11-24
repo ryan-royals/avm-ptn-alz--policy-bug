@@ -1,0 +1,24 @@
+{
+  "type": "Microsoft.Authorization/policyAssignments",
+  "apiVersion": "2022-06-01",
+  "name": "Enforce-Mandatory-Tags",
+  "dependsOn": [],
+  "identity": {
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "description": "Contains the tagging policies applicable to the org",
+    "displayName": "Ensure mandatory tagging is applied to both Resources and Resource Groups",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/placeholder/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Mandatory-Tags",
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Oops!"
+      }
+    ],
+    "parameters": {},
+    "scope": "/providers/Microsoft.Management/managementGroups/placeholder",
+    "notScopes": []
+  },
+  "location": "${default_location}"
+}
